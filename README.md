@@ -1,3 +1,9 @@
+# Personal Notes
+Had to edit Scripts in package.json change ==next dev== to ==next dev -p 4040== so app will run on ==4040==.
+Changed apiPort and port, respectively, in route.js and api-server.js in order to host API on 4001.
+Had to add a callback uri for ==http://localhost:4040/api/auth/callback== else a callback error occured when redirecting to the login screen (this is differnet than the React SPA) 
+
+
 # Auth0 Next.js SDK Sample Application
 
 This sample demonstrates the integration of [Auth0 Next.js SDK](https://github.com/auth0/nextjs-auth0) into a Next.js application created using [create-next-app](https://nextjs.org/docs/api-reference/create-next-app). The sample is a companion to the [Auth0 Next.js SDK Quickstart](https://auth0.com/docs/quickstart/webapp/nextjs).

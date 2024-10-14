@@ -40,7 +40,7 @@ function External() {
         <div data-testid="external-text">
           <p className="lead">Ping an external API by clicking the button below</p>
           <p>
-            This will call a local API on port 3001 that would have been started if you run <code>npm run dev</code>.
+            This will call a local API on port 4001 that would have been started if you run <code>npm run dev</code>.
           </p>
           <p>
             An access token is sent as part of the request's <code>Authorization</code> header and the API will validate
