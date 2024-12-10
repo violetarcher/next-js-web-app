@@ -51,7 +51,12 @@ const NavBar = () => {
                   </NavItem>
                   <NavItem>
                     <PageLink href="/external" className="nav-link" testId="navbar-external">
-                      External API
+                      Shows Subscriber API
+                    </PageLink>
+                  </NavItem>
+                  <NavItem>
+                    <PageLink href="/morescopes" className="nav-link" testId="navbar-external">
+                      Full Subscriber API
                     </PageLink>
                   </NavItem>
                 </>

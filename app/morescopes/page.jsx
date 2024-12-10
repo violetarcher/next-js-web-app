@@ -15,7 +15,7 @@ function External() {
     setState(previous => ({ ...previous, isLoading: true }));
 
     try {
-      const response = await fetch('/api/shows');
+      const response = await fetch('/api/movies');
       const data = await response.json();
 
       setState(previous => ({ ...previous, response: data, error: undefined }));
@@ -36,9 +36,9 @@ function External() {
   return (
     <>
       <div className="mb-5" data-testid="external">
-        <h1 data-testid="external-title">Watch Shows</h1>
+        <h1 data-testid="external-title">Watch Shows & Movies</h1>
         <div data-testid="external-text">
-          <p className="lead">Ping an external API by clicking the button below</p>
+          <p className="lead">Ping a scoped API by clicking the button below</p>
           <p>
             This will call a local API on port 4001 that would have been started if you run <code>npm run dev</code>.
           </p>

@@ -40,7 +40,13 @@ const checkJwt = jwt({
 
 app.get('/api/shows', checkJwt, (req, res) => {
   res.send({
-    msg: 'Your access token was successfully validated!'
+    msg: 'Your access token was successfully validated! You can watch Shows!'
+  });
+});
+
+app.get('/api/movies', checkJwt, (req, res) => {
+  res.send({
+    msg: 'Your access token was successfully validated! You can watch Shows & Movies!'
   });
 });
 
