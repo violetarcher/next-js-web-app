@@ -41,7 +41,7 @@ const NavBar = () => {
                 <>
                   <NavItem>
                     <PageLink href="/csr" className="nav-link" testId="navbar-csr">
-                      Client-side rendered page
+                      Sales Assistant
                     </PageLink>
                   </NavItem>
                   <NavItem>
